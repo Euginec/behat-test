@@ -1,0 +1,16 @@
+default:
+    suites:
+        default:
+            contexts:
+                - FeatureContext
+                - BackgroundContext
+                - CucumberContext
+        background:
+            contexts:
+                - BackgroundContext
+        cucumber:
+            contexts:
+                - CucumberContext
+        pending:
+            contexts:
+                - PendingContext
