@@ -1,16 +1,32 @@
 default:
     suites:
         default:
+            paths: 
+                - %paths.base%/features/cucumber
+                - %paths.base%/features/basket
+                - %paths.base%/features/background
+                - %paths.base%/features/pending
             contexts:
                 - FeatureContext
                 - BackgroundContext
                 - CucumberContext
+        basket:
+            paths: 
+                - %paths.base%/features/basket
+            contexts:
+                - FeatureContext
         background:
+            paths: 
+                - %paths.base%/features/background
             contexts:
                 - BackgroundContext
         cucumber:
+            paths: 
+                - %paths.base%/features/cucumber
             contexts:
                 - CucumberContext
         pending:
+            paths: 
+                - %paths.base%/features/pending
             contexts:
                 - PendingContext

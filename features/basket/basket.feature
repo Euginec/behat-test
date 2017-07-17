@@ -1,3 +1,4 @@
+@basket
 Feature: Product basket
   In order to buy products
   As a customer
